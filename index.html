@@ -13,10 +13,17 @@
 let playerSelection = prompt("Please choose Rock, Paper or Scissors")
 
 function computerPlay() {
-
+ return Math.floor(Math.random() * Math.floor(3));
 }
 
-
+let computerSelection = computerPlay(Math.floor)
+ if (computerSelection == 0) {
+     computerSelection = 'Rock';
+ } else if (computerSelection == 1) {
+     computerSelection = 'Paper';
+ } else {
+     computerSelection = 'Scissors'
+ }
 
 
 function roundOne (playerSelection, computerSelection) {
