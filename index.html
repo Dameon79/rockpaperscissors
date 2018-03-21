@@ -22,14 +22,6 @@ function computerPlay() {
  return Math.floor(Math.random() * Math.floor(3));
 }
 
-let computerSelection = computerPlay(Math.floor);
- if (computerSelection == 0) {
-     computerSelection = 'ROCK';
- } else if (computerSelection == 1) {
-     computerSelection = 'PAPER';
- } else {
-     computerSelection = 'SCISSORS'
- }
 
 
 
@@ -63,10 +55,22 @@ computerScore++;
 function game () {
 
 let playerSelection = prompt("Please choose Rock, Paper or Scissors").toUpperCase();
+
+
+let computerSelection = computerPlay(Math.floor);
+ if (computerSelection == 0) {
+     computerSelection = 'ROCK';
+ } else if (computerSelection == 1) {
+     computerSelection = 'PAPER';
+ } else {
+     computerSelection = 'SCISSORS'
+ }
+
 console.log ("Computer played " +computerSelection);
 console.log ("You played " +playerSelection);
-playRound (playerSelection, computerSelection);
+    playRound (playerSelection, computerSelection);
 gameCount++;
+
 }
 
 for (gameCount=gameCount; gameCount<5; game()) { 
@@ -81,9 +85,6 @@ if (playerScore>computerScore){
     console.log("This game was a draw!");
 }
 }
-
-
-
 
 </script>
 
