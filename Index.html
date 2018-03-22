@@ -40,7 +40,7 @@
       }
 
       function game() {
-        let playerSelection = prompt("Please choose Rock, Paper or Scissors").toUpperCase();
+        let playerSelection = prompt("Please choose Rock, Paper or Scissors").toUpperCase()
 
         let computerSelection = computerPlay(Math.floor)
         if (computerSelection === 0) {
@@ -61,7 +61,7 @@
         game()
       }
       
-      console.log(`Game Over! The Final score is, Player score ${playerScore} Computer Score ${computerScore}, Rounds Drawn ${drawnRounds}`);
+      console.log(`Game Over! The Final score is, Player score ${playerScore} Computer Score ${computerScore}, Rounds Drawn ${drawnRounds}`)
       if (playerScore > computerScore) {
         console.log("Congratulations, you Win!")
       } else if (playerScore < computerScore) {
