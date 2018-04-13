@@ -1,1 +1,1 @@
-creating the basic game of rock, paper, scissors as part of the Odin Project web 101
+Revised version of Rock, Paper Scissors using Javascript and DOM manipulation
