@@ -69,9 +69,6 @@ function computerPlay () {
 }
 
 function playRound (playerSelection, computerSelection) {
-  if (playerScore === 5 || computerScore === 5) {
-    endGame(playerScore, computerScore);
-  } else {
     if (playerSelection === computerSelection) {
       document.getElementById('displayScores').innerHTML = `You played ${playerSelection}, Computer played ${computerSelection}, This round is a draw`
       } else if (playerSelection === "ROCK" && computerSelection === "PAPER") {
@@ -92,7 +89,10 @@ function playRound (playerSelection, computerSelection) {
     } else {
       computerScore++
       document.getElementById('displayScores').innerHTML = `You played ${playerSelection}, Computer played ${computerSelection}, You Lose, Rock beats Scissors!`
-    }         
+    }  
+    if (playerScore === 5 || computerScore === 5) {
+    endGame(playerScore, computerScore);
+  } else {       
   }
 }
 
